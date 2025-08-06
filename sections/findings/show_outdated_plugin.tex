@@ -1,0 +1,39 @@
+\begin{findingbox}[Outdated WordPress Plugin]{medium}
+
+\textbf{Severity:} Medium\\
+\textbf{CWE:} CWE-79\\
+\textbf{CVSS 3.1 Score:} 7.5 (High)\\
+\textbf{Affected Domain:} example.com\\[5pt]
+
+\textbf{Description and Root Cause:} \\
+The vulnerable plugin allows unauthenticated users to inject arbitrary JavaScript...
+
+\vspace{4pt}
+\textbf{Security Impact:} \\
+Attackers may execute JavaScript in the user’s browser...
+
+\vspace{4pt}
+\textbf{Remediation:} \\
+Update the plugin to version $\ge$ 1.2.4 or remove it completely...
+
+\vspace{4pt}
+\textbf{External References:}
+\begin{itemize}
+  \item \url{https://cwe.mitre.org/data/definitions/79.html}
+  \item \url{https://nvd.nist.gov/vuln/detail/CVE-2023-XXXX}
+\end{itemize}
+
+\end{findingbox}
+
+\subsection*{Finding Evidence: Outdated WordPress Plugin}
+\begin{itemize}
+  \item WPScan Output:
+\end{itemize}
+
+\begin{verbatim}
+[+] Name: vulnerable-plugin
+    Version: 1.2.3
+    References:
+     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-XXXX
+\end{verbatim}
+

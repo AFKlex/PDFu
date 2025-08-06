@@ -1,0 +1,93 @@
+% config/commands.tex
+\newcommand{\Finding}[3]{
+  \section*{#1}
+  \textbf{Severity:} #2\\
+  \textbf{Description:} #3
+}
+
+
+\definecolor{sev-high}{HTML}{FF4C4C}
+\definecolor{sev-mediumhigh}{HTML}{FF914D}
+\definecolor{sev-medium}{HTML}{FFD966}
+\definecolor{sev-low}{HTML}{9FE2BF}
+\definecolor{sev-info}{HTML}{7EC8E3}
+
+
+
+% This allows Linking with \begin{findingbox}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable, skins}
+
+\newtcolorbox{findingbox}[2][]{%
+  colback=white,
+  colframe=sev-#2,            % dynamic color from severity
+  coltitle=white,
+  colbacktitle=sev-#2,
+  title=#1,
+  fonttitle=\bfseries\large,
+  breakable,
+  sharp corners=southwest,
+  enhanced,
+  left=2mm,
+  right=2mm,
+  top=2mm,
+  bottom=2mm,
+  before skip=10pt,
+  after skip=10pt,
+}
+
+% Define high level summary box
+\newtcolorbox{summarybox}[1][]{%
+  colback=white,
+  colframe=secondary,
+  coltitle=white,
+  colbacktitle=primary,
+  title=High-Level Summary,
+  fonttitle=\bfseries\large,
+  breakable,
+  sharp corners=southwest,
+  enhanced,
+  left=2mm,
+  right=2mm,
+  top=2mm,
+  bottom=2mm,
+  before skip=10pt,
+  after skip=10pt,
+  #1
+}
+
+% Box for visual summary of severity counts
+\newtcolorbox{severitysummary}[1][]{
+  colback=white,
+  colframe=secondary,
+  sharp corners=southwest,
+  enhanced,
+  before skip=5pt,
+  after skip=5pt,
+  boxrule=0.5pt,
+  fontupper=\sffamily,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm,
+  #1
+}
+
+\newcommand{\SeverityTable}[4]{
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  \rowcolor{gray!20}
+  \textbf{\textcolor{sev-high}{High}} &
+  \textbf{\textcolor{sev-medium}{Medium}} &
+  \textbf{\textcolor{sev-low}{Low}} &
+  \textbf{\textcolor{sev-info}{Informational}} \\
+  \hline
+  \textbf{\textcolor{sev-high}{#1}} &
+  \textbf{\textcolor{sev-medium}{#2}} &
+  \textbf{\textcolor{sev-low}{#3}} &
+  \textbf{\textcolor{sev-info}{#4}} \\
+  \hline
+\end{tabular}
+\end{center}
+}

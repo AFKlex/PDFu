@@ -1,0 +1,24 @@
+\section{Findings}
+\subsection{High Level Summary}
+
+\begin{summarybox}
+This report summarizes the key vulnerabilities identified during the penetration test. A total of 15 issues were discovered, categorized by severity below:
+
+\begin{severitysummary}
+\SeverityTable{5}{2}{3}{5}
+\end{severitysummary}
+
+Key observations:
+\begin{itemize}
+  \item Outdated plugin enabling remote code execution on core backend server.
+  \item Weak password policy enforcement across external login interfaces.
+  \item Lack of input sanitization on user data entry points.
+\end{itemize}
+
+A detailed breakdown of each finding is available in the following section.
+\end{summarybox}
+
+
+
+\subsection{Technical Findings}
+\input{sections/findings/show_outdated_plugin.tex}

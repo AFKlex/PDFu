@@ -1,0 +1,20 @@
+pentest-report/
+├── main.tex
+├── sections/
+│   ├── titlepage.tex
+│   ├── executive_summary.tex
+│   ├── scope.tex
+│   ├── methodology.tex
+│   ├── findings.tex
+│   ├── recommendations.tex
+│   └── appendix.tex
+├── config/
+│   ├── settings.tex
+│   └── commands.tex
+├── assets/
+│   ├── logo.pdf
+│   └── figures/
+├── style/
+│   └── report.sty
+└── Makefile
+

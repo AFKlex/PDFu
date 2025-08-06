@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper]{article}
+
+% Load custom style
+\usepackage{style/report}
+
+% Encoding and hyperlinks
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{hyperref}
+
+
+
+% Custom configurations
+\input{config/settings}
+\input{config/commands}
+
+\begin{document}
+
+\input{sections/titlepage}
+\tableofcontents
+\newpage
+
+\input{sections/executive_summary}
+\input{sections/scope}
+\input{sections/methodology}
+\input{sections/findings}
+\input{sections/recommendations}
+\input{sections/appendix}
+
+% Add references section at the end
+% Add references section at the end
+\newpage
+\section*{References}
+\bibliographystyle{plain}          % Choose citation style here
+\bibliography{sections/references} 
+
+\end{document}
+

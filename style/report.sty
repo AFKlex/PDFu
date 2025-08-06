@@ -1,0 +1,30 @@
+% style/report.sty
+\usepackage{tcolorbox}
+\tcbuselibrary{listings,breakable,skins}
+%\usepackage[table]{xcolor}
+\ProvidesPackage{report}
+\RequirePackage{xcolor}
+\RequirePackage{colortbl}
+\RequirePackage{graphicx}
+\RequirePackage{titlesec}
+\RequirePackage{fancyhdr}
+
+% Colors
+\definecolor{primary}{HTML}{003366}
+\definecolor{secondary}{HTML}{0055A4}
+
+% Fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Headers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=12pt]{assets/logo.png}}
+\fancyhead[R]{\textcolor{secondary}{\leftmark}}
+\fancyfoot[C]{\thepage}
+
+% Title styling
+\titleformat{\section}
+  {\color{primary}\Large\bfseries}
+  {\thesection}{1em}{}
+

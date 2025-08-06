@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{cve2023example}
+Cve-2023-xxxxx.
+\newblock \url{https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-XXXXX},
+  2023.
+\newblock Critical RCE vulnerability.
+
+\bibitem{nmap}
+Gordon Lyon.
+\newblock Nmap network scanning.
+\newblock \url{https://nmap.org/book/}, 2023.
+\newblock Accessed: 2025-08-04.
+
+\end{thebibliography}
