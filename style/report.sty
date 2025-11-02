@@ -9,9 +9,15 @@
 \RequirePackage{titlesec}
 \RequirePackage{fancyhdr}
 
-% Colors
-\definecolor{primary}{HTML}{003366}
-\definecolor{secondary}{HTML}{0055A4}
+%Make header/footer widths equal to text block
+\setlength{\headwidth}{\textwidth}
+\fancyhfoffset[L]{0pt} % no offset on left
+\fancyhfoffset[R]{0pt} % no offset on right
+
+
+% Colors -> Moved to Settings 
+%\definecolor{primary}{HTML}{003366}
+%\definecolor{secondary}{HTML}{0055A4}
 
 % Fonts
 \renewcommand{\familydefault}{\sfdefault}
@@ -19,12 +25,15 @@
 % Headers
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\includegraphics[height=12pt]{assets/logo.png}}
+
+
+\fancyhead[L]{\includegraphics[height=24pt]{\HeaderLogo}}
+
 \fancyhead[R]{\textcolor{secondary}{\leftmark}}
 \fancyfoot[C]{\thepage}
 
 % Title styling
 \titleformat{\section}
-  {\color{primary}\Large\bfseries}
-  {\thesection}{1em}{}
+{\color{primary}\Large\bfseries}
+{\thesection}{1em}{}
 

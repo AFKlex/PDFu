@@ -1,12 +1,45 @@
 % sections/titlepage.tex
 \begin{titlepage}
-\centering
-\vspace*{4cm}
-{\Huge \bfseries Penetration Test Report}\\[1cm]
-{\Large \CompanyName}\\[0.5cm]
-\includegraphics[width=0.25\textwidth]{assets/logo.png}\\[2cm]
-{\large Client: \ClientName}\\
-{\large Date: \ReportDate}
+	\newgeometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+	\centering
+	\color{secondary}
+	
+	% Background rectangle at top
+\begin{tikzpicture}[remember picture, overlay]
+	\fill[title-bg] (current page.north west) rectangle ([yshift=-6cm]current page.north east);
+\end{tikzpicture}
+	
+	\vspace*{1,5cm}
+	
+	% Report Title
+	{\Huge\bfseries \ReportScope}\\[1,5cm]
+	
+	% Logo
+	\includegraphics[width=0.3\textwidth]{\TitleLogo}\\[2cm]
+	
+	% Company Name
+	{\LARGE \CompanyName}\\[3cm]
+	
+	% Horizontal line
+	\color{secondary}
+	\rule{\textwidth}{2pt}
+	\vspace{2cm}
+	\color{black}
+	
+	% Report information
+	\begin{tabular}{rl}
+		\textbf{Client:} & \ClientName \\
+		\textbf{Date:} & \ReportDate \\
+		\textbf{Report Version:} & \ReportVersion \\
+		\textbf{Primary Pentester:} & \PrimaryPentester \\
+		\textbf{Reviewed By:} & \ReviewedBy \\
+	\end{tabular}
+	
+	\vfill
+	
+	\textit{Confidential – For Internal Use Only}
+	
+	\restoregeometry
 \end{titlepage}
 \newpage
 

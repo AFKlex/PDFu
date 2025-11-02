@@ -1,7 +1,50 @@
 % config/settings.tex
-\setlength{\headheight}{16pt}
-\newcommand{\CompanyName}{CyberHammer}
-\newcommand{\ClientName}{ACME Corp}
+
+% --------------------------
+% Brand & Client Settings
+% --------------------------
+\newcommand{\CompanyName}{Inlanefreight}
+\newcommand{\ClientName}{Inlanefreight CEO}
 \newcommand{\ReportDate}{\today}
+\newcommand{\ReportVersion}{1.0}
+\newcommand{\PrimaryPentester}{Alexander Agricola}
+\newcommand{\ReviewedBy}{}
+\newcommand{\ReportScope}{Single System Assessment}
 
 
+% --------------------------
+% Primary Color Palette
+% --------------------------
+\definecolor{primary}{HTML}{9FEF00}      % main brand color (e.g., client icon)
+\definecolor{secondary}{HTML}{88cc02}    % accent color (e.g., for headings, lines)
+\definecolor{tertiary}{HTML}{003366}     % dark color for headers or emphasis
+\definecolor{highlight}{HTML}{A0FF57}    % optional highlight color
+
+
+
+% --------------------------
+% Box Colors
+% --------------------------
+\definecolor{box-bg}{HTML}{F2F9E3}       % box background
+\definecolor{box-border}{HTML}{C3E66E}   % box border
+
+% --------------------------
+% Severity Colors
+% --------------------------
+\definecolor{sev-critical}{HTML}{990000}   % dark red
+\definecolor{sev-high}{HTML}{FF4C4C}       % bright red
+\definecolor{sev-medium}{HTML}{FFB84D}     % darker, more orange yellow
+\definecolor{sev-low}{HTML}{9FE2BF}        % light green
+\definecolor{sev-info}{HTML}{7EC8E3}       % light blue
+
+
+% --------------------------
+% Title Page Background
+% --------------------------
+\definecolor{title-bg}{HTML}{F2F9E3}     % light background for title page
+
+% --------------------------
+% Logo Paths
+% --------------------------
+\newcommand{\TitleLogo}{assets/logo_title.png}   % logo on the title page
+\newcommand{\HeaderLogo}{assets/logo_header.png} % logo in header/footer

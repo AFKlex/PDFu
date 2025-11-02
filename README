@@ -1,0 +1,21 @@
+Configure TeXstudio for output: 
+
+Options -> Configure TeXstudio -> Commands -> pdflatex 
+and add -output-directory=output
+
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=output %.tex
+
+then go to
+Options -> Configure TeXstudio -> build -> Show Advanced Options 
+then add under Log file the folder o
+
+pdflatex -synctex=1 -interaction=nonstopmode -output-directory=output %.tex
+evince output/%.pdf > /dev/null
+bibtex output/%.aux
+makeglossaries -d output %
+
+Log File: output
+PDF File: output
+
+Build & View
+txs:///compile | txs:///bibtex | txs:///makeglossaries | txs:///compile | txs:///view

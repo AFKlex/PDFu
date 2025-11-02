@@ -1,24 +1,40 @@
+
+\newpage
 \section{Findings}
 \subsection{High Level Summary}
 
 \begin{summarybox}
-This report summarizes the key vulnerabilities identified during the penetration test. A total of 15 issues were discovered, categorized by severity below:
-
-\begin{severitysummary}
-\SeverityTable{5}{2}{3}{5}
-\end{severitysummary}
-
-Key observations:
-\begin{itemize}
-  \item Outdated plugin enabling remote code execution on core backend server.
-  \item Weak password policy enforcement across external login interfaces.
-  \item Lack of input sanitization on user data entry points.
-\end{itemize}
-
-A detailed breakdown of each finding is available in the following section.
+	This report summarizes the key vulnerabilities identified during the penetration test. A total of 4 issues were discovered, categorized by severity below:
+	
+	\SeverityTable
+	{\total{criticalCount}}
+	{\total{highCount}}
+	{\total{mediumCount}}
+	{\total{lowCount}}
+	{\total{infoCount}}
+	
+	
+	Key observations:
+	\begin{itemize}
+		\item Sensitive Information Exposed in Public Repositories
+		\item Passwords and critical information are stored in an insecure way. 
+		\item Vulnerable Software  components were installed on the target machine. 
+	\end{itemize}
+	
+	A detailed breakdown of each finding is available in the following section.
 \end{summarybox}
 
+\input{sections/understanding_risk_levels.tex}
 
-
+\newpage
 \subsection{Technical Findings}
-\input{sections/findings/show_outdated_plugin.tex}
+\subsubsection{Sensitve Information Exposed in Public Repositories}
+%\input{sections/findings/critical_information_are_uploaded_to_a_public_repository.tex}
+
+\newpage
+\subsubsection{Remote Code Execution via API Token and Automated CI/CD Pipeline}
+%\input{sections/findings/remote_code_exectuon_via_API_token_and_automated_ci-dc_pipeline.tex}
+
+\newpage
+\subsubsection{Weakly Encrypted Credentials in MGRemote Configuration File}
+\input{sections/findings/weakly_encrypted_credentials_inmgremote_configuration_file.tex}

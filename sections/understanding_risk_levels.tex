@@ -1,0 +1,17 @@
+\subsection{Risk Classification and CVSS Explanation}
+Penetration testing uses a simplified risk categorization to focus remediation on the issues that matter most. The \gls{cvss} is an industry-standard formula generating a risk score between 0.0 and 10.0, which provides a baseline severity rating for each vulnerability.
+
+The table below summarizes the risk categories and their typical CVSS equivalency:
+
+\begin{tabularx}{\textwidth}{p{3cm} p{2cm} X}
+	\textbf{Risk Category} & \textbf{CVSS} & \textbf{Rationale} \\
+	\hline
+	\textcolor{sev-critical}{Critical} & 8.1 – 10.0 & Severe vulnerabilities that are easy to exploit. Immediate remediation is recommended. \\
+	\textcolor{sev-high}{High} & 6.1 – 8.0 & Significant risk that can be exploited. Address promptly after critical issues are resolved. \\
+	\textcolor{sev-medium}{Medium} & 4.1 – 6.0 & Important but potentially harder to exploit. Remedial work should be completed within approximately three months. \\
+	\textcolor{sev-low}{Low} & 2.1 – 4.0 & Minor risk or difficult to exploit. Address over the long term as part of routine security cycles. \\
+	\textcolor{sev-info}{Informational} & 0.0 – 2.0 & Observations that are not directly exploitable but may provide insight for future hardening. \\
+\end{tabularx}
+
+\subsubsection*{Contextual Considerations}
+While \gls{cvss} provides a useful baseline, it does not always capture risks specific to the client’s environment. For example, architectural issues such as a “flat network design” or exposed internal services may not have a high \gls{cvss} score, but in the context of the client’s systems, they may represent critical risk. The report indicates the actual criticality based on the environment. This ensures that remediation priorities reflect both standardized scoring and client-specific impact.

@@ -1,0 +1,140 @@
+\glsdefs@newdocentry{rce}%
+{%
+name={\acronymfont {\glsentryshort {rce}}},%
+sort={RCE},%
+type={acronym},%
+first={RCE},%
+firstplural={RCEs},%
+text={RCE},%
+plural={RCEs},%
+description={Remote Code Execution},%
+descriptionplural={Remote Code Execution},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Remote Code Execution},%
+longplural={Remote Code Executions},%
+short={RCE},%
+shortplural={RCEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{api}%
+{%
+name={\acronymfont {\glsentryshort {api}}},%
+sort={API},%
+type={acronym},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cvss}%
+{%
+name={\acronymfont {\glsentryshort {cvss}}},%
+sort={CVSS},%
+type={acronym},%
+first={CVSS},%
+firstplural={CVSSs},%
+text={CVSS},%
+plural={CVSSs},%
+description={Common Vulnerability Scoring System},%
+descriptionplural={Common Vulnerability Scoring System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Common Vulnerability Scoring System},%
+longplural={Common Vulnerability Scoring Systems},%
+short={CVSS},%
+shortplural={CVSSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{blackboxtest}%
+{%
+name={Black Box Test},%
+sort={Black Box Test},%
+type={main},%
+first={Black Box Test},%
+firstplural={Black Box Tests},%
+text={Black Box Test},%
+plural={Black Box Tests},%
+description={A penetration test where the tester has no prior knowledge of the system. The system is tested from an external perspective, simulating an attacker with no insider information.},%
+descriptionplural={A penetration test where the tester has no prior knowledge of the system. The system is tested from an external perspective, simulating an attacker with no insider information.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{whiteboxtest}%
+{%
+name={White Box Test},%
+sort={White Box Test},%
+type={main},%
+first={White Box Test},%
+firstplural={White Box Tests},%
+text={White Box Test},%
+plural={White Box Tests},%
+description={A penetration test where the tester has full knowledge of the system, including source code and architecture.},%
+descriptionplural={A penetration test where the tester has full knowledge of the system, including source code and architecture.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
